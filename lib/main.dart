@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:velvet_room/screens/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Velvet Room App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      home: const SplashScreen(),
     );
   }
 }
